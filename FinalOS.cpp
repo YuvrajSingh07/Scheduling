@@ -5,8 +5,8 @@
 using namespace std;
 struct pros
 {
-	int arrivalTime,burstTime,copy_bT,Priority,completion_time,waitingTime,TAT;         //aT=ArrivalTime,bT=BurstTime,pN=PriorityNumber,cT=CompletionTime,wT=WaitingTime
-	string processID;                      //processId=ProcessName
+	int arrivalTime,burstTime,copy_bT,Priority,completion_time,waitingTime,TAT;
+	string processID;
 };
 int findMin(pros [],int);
 int findIndex(int,string,pros []);
@@ -16,7 +16,7 @@ class Scheduling
 	int NoProcess,Var,Indef,Var1,Timer,MinPriority,pPI,pIvar,x,PreviousMinPriority;
 	pros pro[50];
 	string PreviousPro;
-	vector<string> q1,q2;                                   // two Queues            q1= Priority Preemptive Scheduling, q2=Round Robin Scheduling
+	vector<string> q1,q2;
 	vector<int> PrioritySelector;
 	public:
 
@@ -308,7 +308,7 @@ int findIndex(int NoProcess,string pI,pros pro[])
 	int in;
 	for(int i=0;i<NoProcess;i++)
 
-		if(pI==pro[i].processID)
+    if(pI==pro[i].processID)
 		{
 			in=i;
 		}
