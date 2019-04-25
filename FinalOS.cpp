@@ -308,7 +308,7 @@ int findIndex(int NoProcess,string pI,pros pro[])
 	int in;
 	for(int i=0;i<NoProcess;i++)
 
-		if(pI==pro[i].processID
+		if(pI==pro[i].processID)
 		{
 			in=i;
 		}
